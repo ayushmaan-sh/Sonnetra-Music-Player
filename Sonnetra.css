@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.left{
+    width: 25%;
+    padding: 13px;
+}
+
+.home{
+    padding: 14px;
+}
+
+.home ul li{
+    list-style: none;
+    width: 24px;
+    display: flex;
+    gap: 20px;
+    padding-top: 18px;
+    font-weight: bold;
+}
+.heading{
+    list-style: none;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    padding-top: 18px;
+    padding: 27px 18px;
+    font-weight: bold;
+    align-items: center;
+}
+
+.heading img{
+    width: 25px;
+}
+
+.library{
+    min-height: 70vh;
+    position: relative;
+}
+
+.footer{
+    display: flex;
+    gap: 4px;
+    position: absolute;
+    bottom: 20px;
+}
+.footer a{
+    color: gray;
+    font-size: 11px;
+}
+
+.right{
+    width: 75%;
+    margin: 19px 0;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #343434;
+}
+.header > *{
+    padding: 20px;
+}
+
+.SonnetraPlaylists{
+    padding: 19px;
+}
