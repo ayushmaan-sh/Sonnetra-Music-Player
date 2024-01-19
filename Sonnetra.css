@@ -1,24 +1,25 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-family: sans-serif;
     background-color: black;
     color: white;
 }
 
-.left{
+.left {
     width: 25%;
     padding: 13px;
 }
 
-.home{
+.home {
     padding: 14px;
 }
 
-.home ul li{
+.home ul li {
     list-style: none;
     width: 24px;
     display: flex;
@@ -26,7 +27,8 @@ body{
     padding-top: 18px;
     font-weight: bold;
 }
-.heading{
+
+.heading {
     list-style: none;
     width: 100%;
     display: flex;
@@ -37,40 +39,113 @@ body{
     align-items: center;
 }
 
-.heading img{
+.heading img {
     width: 25px;
 }
 
-.library{
+.library {
     min-height: 70vh;
     position: relative;
 }
 
-.footer{
+.footer {
     display: flex;
     gap: 4px;
     position: absolute;
     bottom: 20px;
 }
-.footer a{
+
+.footer a {
     color: gray;
     font-size: 11px;
 }
 
-.right{
+.right {
     width: 75%;
     margin: 19px 0;
+    max-height: 100vh;
+    overflow: scroll;
 }
 
-.header{
+.header {
     display: flex;
     justify-content: space-between;
     background-color: #343434;
+    height: 75px;
 }
-.header > *{
+
+.header>* {
     padding: 20px;
 }
 
-.SonnetraPlaylists{
+.SonnetraPlaylists {
     padding: 19px;
+}
+
+.cardcontainer {
+    display: flex;
+    margin: 20px;
+    gap: 10px;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    max-height: 55vh;
+}
+
+.card {
+    width: 175px;
+    padding: 5px;
+    background-color: #685f5f25;
+    border-radius: 5px;
+    position: relative;
+}
+
+/* .card > *{
+    padding-top: 3px;
+} */
+.card img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.play {
+    position: absolute;
+    top: 130px;
+    right: 10px;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+}
+
+.play:hover {
+    opacity: 1;
+    transition: all 0.5s ease-out;
+}
+
+.button > *{
+    margin: 0 12px;
+}
+
+.signup-Btn {
+    background-color: #343434;
+    color: rgba(252, 252, 252, 0.61);
+    font-weight: bold;
+    border: none;
+    outline: none;
+}
+.signup-Btn:hover {
+    font-size: 14px;
+    cursor: pointer;
+    color: white;
+}
+
+.login-Btn{
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-Btn:hover{
+    font-weight: bold;
 }
