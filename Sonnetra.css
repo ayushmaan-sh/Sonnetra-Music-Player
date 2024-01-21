@@ -64,7 +64,8 @@ body {
     width: 75%;
     margin: 19px 0;
     max-height: 100vh;
-    overflow: scroll;
+    /* overflow: scroll; */
+    position: relative;
 }
 
 .header {
@@ -148,4 +149,17 @@ body {
 
 .login-Btn:hover{
     font-weight: bold;
+}
+
+.playbar{
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(255, 255, 255);
+    width: 95%;
+    padding: 15px;
+}
+
+.songBtn{
+    display: flex;
+    justify-content: center;
 }
