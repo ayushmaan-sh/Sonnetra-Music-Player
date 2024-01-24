@@ -1,3 +1,5 @@
+let currentSong = new Audio()
+
 async function getSongs(){
     //fetching song lists
     let fetch_songs = await fetch("http://127.0.0.1:5500/songs/")
@@ -19,7 +21,17 @@ async function getSongs(){
     return songs
 }
 
+const playMusic = (track)=>{
+    // let audio = new Audio("/songs/" + track)
+    currentSong.src = "/songs/" + track
+    currentSong.play()
+    play.src = "pause.svg"
+    document.querySelector(".songInfo").innerHTML = track
+    document.querySelector(".songTime").innerHTML = "00:00 / 00:00"
+}
+
 async function main(){
+
     //get the lists of all the songs
     let songs = await getSongs()
     console.log(songs)
@@ -36,6 +48,27 @@ async function main(){
                                 <img src="play.svg" class="invert" alt="">
                             </div></li>`
     }
+
+    //attach an event listener to each song
+    Array.from(document.querySelector(".songlist").getElementsByTagName("li")).forEach(e=>{
+        e.addEventListener("click", element=>{
+            console.log(e.querySelector(".info").firstElementChild.innerHTML)
+            playMusic(e.querySelector(".info").firstElementChild.innerHTML)
+        })
+    })
+
+    //Attach an event listener to play, next and previous
+
+    play.addEventListener("click", ()=>{
+        if(currentSong.paused){
+            currentSong.play()
+            play.src = "pause.svg"
+        }else{
+            currentSong.pause()
+            play.src = "play.svg"
+        }
+    })
+
 }
 
 main()
