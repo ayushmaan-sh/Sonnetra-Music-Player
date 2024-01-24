@@ -1,19 +1,14 @@
-//function for getting songs and there information
-
 async function getSongs(){
-    //taking audios data
-    let songLists = await fetch("http://127.0.0.1:5500/songs/"); 
-    let response = await songLists.text();
-    console.log(response)
+    //fetching song lists
+    let fetch_songs = await fetch("http://127.0.0.1:5500/songs/")
+    let response = await fetch_songs.text();
 
-    // getting links of songs
-    let div = document.createElement("div");
+    //taking them into a separate element
+    let div = document.createElement("div")
     div.innerHTML = response;
     let as = div.getElementsByTagName("a")
-    console.log(as)
 
-    //while getting the links of songs, we also get some other links in the data but we want only mp3 files
-    //for that reason, we sort it them by using .endsWith(".mp3")
+    //an array to store songs
     let songs = []
     for (let index = 0; index < as.length; index++) {
         const element = as[index];
@@ -24,28 +19,23 @@ async function getSongs(){
     return songs
 }
 
-// function for performing operations on playing songs
-
-async function playSong(){
+async function main(){
+    //get the lists of all the songs
     let songs = await getSongs()
     console.log(songs)
 
-    // showing up the song names in the library section through ul tag,
-    // for of loop used for showing up the array's data, which are name of the songs
-    
+    //show all the songs in the playlists
     let songUL = document.querySelector(".songlist").getElementsByTagName("ul")[0]
     for (const song of songs) {
-        songUL.innerHTML = songUL.innerHTML + `<li> ${song.replaceAll("%20", " ")} </song>`
+        songUL.innerHTML = songUL.innerHTML + `<li><img src="music-icon.svg" class="invert" alt="">
+                            <div class="info">
+                                <div class="">${song.replaceAll("%20", " ")}</div>
+                                <div class=""></div>
+                            </div>
+                            <div class="playnow">
+                                <img src="play.svg" class="invert" alt="">
+                            </div></li>`
     }
-
-    //play the song
-    var audio = new Audio(songs[3])
-    audio.play()
-
-    audio.addEventListener("loadeddata", ()=>{
-        let duration = audio.duration;
-        console.log(duration)
-    })
 }
 
-playSong()
+main()
