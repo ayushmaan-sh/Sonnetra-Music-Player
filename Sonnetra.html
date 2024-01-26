@@ -13,14 +13,17 @@
     <div class="container flex">
         <!-- Left side container -->
         <div class="left g-grey rounded m-1 p-1">
+
+            <div class="close"><img src="close.svg" class="invert" alt=""></div>
             <div class="home bg-grey rounded m-1 p-1">
-                <div class="logo"><img src="Logo.svg" alt="" class="invert"></div>
+                <div class="logo"><img src="logo-2-removebg-preview.png" alt="" width="300px" height="50px"></div>
                 <ul>
                     <li><img src="Home_Button.svg" alt="" class="invert">Home</li>
                     <li><img src="Search_Button.svg" alt="" class="invert">Search</li>
                 </ul>
             </div>
 
+            <!-- Library section -->
             <div class="library bg-grey rounded  m-1 p-1">
                 <div class="heading">
                     <img class="invert" src="playlist_logo.svg" alt="">
@@ -28,7 +31,7 @@
                 </div>
                 <div class="songlist">
                     <ul>
-                        
+
                     </ul>
                 </div>
 
@@ -50,18 +53,21 @@
         <div class="right bg-grey rounded">
             <div class="header">
                 <div class="nav">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        class="injected-svg" data-src="/icons/arrow-left-01-stroke-rounded.svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#000000">
-                        <path d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18" stroke="#ffffff"
-                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        class="injected-svg" data-src="/icons/arrow-right-01-stroke-rounded.svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#000000">
-                        <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="#ffffff"
-                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
+                    <div class="navbar-container">
+                        <img src="hamburger.svg" class="invert hamburger" alt="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            class="injected-svg" data-src="/icons/arrow-left-01-stroke-rounded.svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#000000">
+                            <path d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18" stroke="#ffffff"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            class="injected-svg" data-src="/icons/arrow-right-01-stroke-rounded.svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#000000">
+                            <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="#ffffff"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </div>
                 </div>
                 <div class="button">
                     <button class="signup-Btn">Sign Up</button>
@@ -70,7 +76,7 @@
             </div>
 
             <div class="SonnetraPlalists p-1">
-                <h1>Sonnetra Playlists</h1>
+                <h1>Your Top Mixes</h1>
                 <div class="cardcontainer">
                     <div class="card">
                         <div class="play">
@@ -81,7 +87,8 @@
                             </svg>
                         </div>
                         <img src="The chainsmokers.jfif" alt="">
-                        <h2>The chainsmokers</h2>
+                        <h3>The chainsmokers Mix</h3>
+                        <p>Twenty one pilots, Linkin Park, Shawn Mendes</p>
                     </div>
 
 
@@ -94,27 +101,214 @@
                             </svg>
                         </div>
                         <img src="darshan.jpg" alt="">
-                        <h2>Darshan Raval</h2>
+                        <h3>Darshan Raval Mix</h3>
+                        <p>DIVINE, Raftaar, KR$NA</p>
                     </div>
 
-                    <!-- Player -->
+
+                    <div class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 60 60"
+                                role="img" color="#000000">
+                                <circle cx="30" cy="30" r="30" fill="white" />
+                                <path d="M23.5 39.5L35.75 30L23.5 20.5V39.5Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="Twenty one pilots.jfif" alt="">
+                        <h3>Twenty One Pilots mix</h3>
+                        <p>Little mix, The chainsmokers, linkin park</p>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 60 60"
+                                role="img" color="#000000">
+                                <circle cx="30" cy="30" r="30" fill="white" />
+                                <path d="M23.5 39.5L35.75 30L23.5 20.5V39.5Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="linkin park.jfif" alt="">
+                        <h3>Linkin Park mix</h3>
+                        <p>The chainsmokers, Shawn Mendes, Harry Styles</p>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 60 60"
+                                role="img" color="#000000">
+                                <circle cx="30" cy="30" r="30" fill="white" />
+                                <path d="M23.5 39.5L35.75 30L23.5 20.5V39.5Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="divine.jfif" alt="">
+                        <h3>DIVINE Mix</h3>
+                        <p>Raftaar, Ikka, KR$NA</p>
+                    </div>
                 </div>
+
+
+                <!-- --------------------------------- TOP ALBUMS----------------------------------------------------------- -->
+
+                <h1>Top Albums</h1>
+                <div class="cardcontainer">
+                    <div class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 60 60"
+                                role="img" color="#000000">
+                                <circle cx="30" cy="30" r="30" fill="white" />
+                                <path d="M23.5 39.5L35.75 30L23.5 20.5V39.5Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="so far so good.jfif" alt="">
+                        <h3>So far so good</h3>
+                        <p>The chainsmokers</p>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 60 60"
+                                role="img" color="#000000">
+                                <circle cx="30" cy="30" r="30" fill="white" />
+                                <path d="M23.5 39.5L35.75 30L23.5 20.5V39.5Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="inner monologue part 1.jfif" alt="">
+                        <h3>Inner monologue part 1</h3>
+                        <p>Julia Michaels</p>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 60 60"
+                                role="img" color="#000000">
+                                <circle cx="30" cy="30" r="30" fill="white" />
+                                <path d="M23.5 39.5L35.75 30L23.5 20.5V39.5Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="making memories.jfif" alt="">
+                        <h3>Making Memories</h3>
+                        <p>Karan Aujla, Ikky</p>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 60 60"
+                                role="img" color="#000000">
+                                <circle cx="30" cy="30" r="30" fill="white" />
+                                <path d="M23.5 39.5L35.75 30L23.5 20.5V39.5Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="animal.jfif" alt="">
+                        <h3>Animal</h3>
+                        <p>Manan Bharadwaj, Vishal Mishra...</p>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 60 60"
+                                role="img" color="#000000">
+                                <circle cx="30" cy="30" r="30" fill="white" />
+                                <path d="M23.5 39.5L35.75 30L23.5 20.5V39.5Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="trench.webp" alt="">
+                        <h3>Trench</h3>
+                        <p>Twenty One Pilots/p>
+                    </div>
+                </div>
+
+                <!-------------------------------------- YOUR FAV SINGERS-------------------------------------------------------->
+
+                <h1>Favourite Singers</h1>
+                <div class="cardcontainer">
+                    <div class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 60 60"
+                                role="img" color="#000000">
+                                <circle cx="30" cy="30" r="30" fill="white" />
+                                <path d="M23.5 39.5L35.75 30L23.5 20.5V39.5Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="drew taggart.jpg" alt="">
+                        <h3>Drew Taggart</h3>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 60 60"
+                                role="img" color="#000000">
+                                <circle cx="30" cy="30" r="30" fill="white" />
+                                <path d="M23.5 39.5L35.75 30L23.5 20.5V39.5Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="julia michaels.jpg" alt="">
+                        <h3>Julia Michaels</h3>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 60 60"
+                                role="img" color="#000000">
+                                <circle cx="30" cy="30" r="30" fill="white" />
+                                <path d="M23.5 39.5L35.75 30L23.5 20.5V39.5Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="darshan.jpg" alt="">
+                        <h3>Darshan Raval</h3>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 60 60"
+                                role="img" color="#000000">
+                                <circle cx="30" cy="30" r="30" fill="white" />
+                                <path d="M23.5 39.5L35.75 30L23.5 20.5V39.5Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="Twenty one pilots fav singer.jfif" alt="">
+                        <h3>Twenty One Pilots</h3>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 60 60"
+                                role="img" color="#000000">
+                                <circle cx="30" cy="30" r="30" fill="white" />
+                                <path d="M23.5 39.5L35.75 30L23.5 20.5V39.5Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="divine.jfif" alt="">
+                        <h3>DIVINE</h3>
+                    </div>
+                </div>
+
+                <!-- Player -->
                 <div class="playbar">
-                    <div class="Info-Btn-Time">
-                    <div class="songInfo">
-                        <div class="seekbar">
-                            <div class="circle"></div>
+                    <div class="aboveBar">
+                        <div class="songInfo" style="margin-top: 6px;">
+                            <div class="seekbar">
+                                <div class="circle"></div>
+                            </div>
+                        </div>
+                        <div class="songBtn">
+                            <img id="previous" src="previousSong.svg" alt="">
+                            <img id="play" src="play.svg" alt="">
+                            <img id="next" src="nextSong.svg" alt="">
+                        </div>
+                        <div class="songTime" style="margin-top: 6px;">
+
                         </div>
                     </div>
-                    <div class="songBtn">
-                        <img id="previous" src="previousSong.svg" alt="">
-                        <img id="play" src="play.svg" alt="">
-                        <img id="next" src="nextSong.svg" alt="">
-                    </div>
-                    <div class="songTime">
-
-                    </div>
-                </div>
                 </div>
             </div>
         </div>
